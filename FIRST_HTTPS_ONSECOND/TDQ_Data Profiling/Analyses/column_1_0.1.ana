@@ -2,6 +2,7 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
   <dataquality.analysis:Analysis xmi:id="_cdmh8HJLEeW4VeOgz3OtTg" name="column_1" creationDate="2015-10-14T16:13:26.279+0800" defaultContext="Default">
     <clientDependency href="../../metadata/connections/mysql_1_0.1.item#_ctlesHJLEeW4VeOgz3OtTg"/>
+    <clientDependency href="../../TDQ_Libraries/Patterns/Regex/internet/Email_Address_0.1.pattern#_iBclAHJLEeW4VeOgz3OtTg"/>
     <taggedValue xmi:id="_cdmh8XJLEeW4VeOgz3OtTg" tag="Status" value="development"/>
     <taggedValue xmi:id="_cdmh8nJLEeW4VeOgz3OtTg" tag="Author" value="aa@aa.com"/>
     <taggedValue xmi:id="_cdmh83JLEeW4VeOgz3OtTg" tag="Purpose" value=""/>
@@ -272,6 +273,15 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X11FkXJLEeW4VeOgz3OtTg"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
       </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_iInkAXJLEeW4VeOgz3OtTg" name="Email Address">
+        <parameters xmi:id="_iInkAnJLEeW4VeOgz3OtTg">
+          <dataValidDomain xmi:id="_iInkA3JLEeW4VeOgz3OtTg">
+            <patterns href="../../TDQ_Libraries/Patterns/Regex/internet/Email_Address_0.1.pattern#_rC5TcD4XEd24WPpU35gV1A"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X11FkXJLEeW4VeOgz3OtTg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+      </indicators>
       <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_ctmGBnJLEeW4VeOgz3OtTg">
         <parameters xmi:id="_ctmGB3JLEeW4VeOgz3OtTg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X11FlXJLEeW4VeOgz3OtTg"/>
@@ -299,7 +309,7 @@
       </indicators>
     </results>
     <parameters xmi:id="_cdnJAHJLEeW4VeOgz3OtTg" dataFilter="_dIR2oHJLEeW4VeOgz3OtTg" analysisType="Multiple Column Analysis"/>
-    <contextType xmi:id="_ctjpgHJLEeW4VeOgz3OtTg" confirmationNeeded="false" name="Default"/>
+    <contextType xmi:id="_iInkAHJLEeW4VeOgz3OtTg" confirmationNeeded="false" name="Default"/>
   </dataquality.analysis:Analysis>
   <dataquality.domain:Domain xmi:id="_dIR2oHJLEeW4VeOgz3OtTg" name="column_1">
     <ranges xmi:id="_dISdsHJLEeW4VeOgz3OtTg">
