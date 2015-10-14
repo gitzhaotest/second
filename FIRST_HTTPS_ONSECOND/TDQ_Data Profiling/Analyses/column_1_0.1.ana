@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.domain.pattern="http://dataquality.domain.pattern" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
   <dataquality.analysis:Analysis xmi:id="_cdmh8HJLEeW4VeOgz3OtTg" name="column_1" creationDate="2015-10-14T16:13:26.279+0800" defaultContext="Default">
     <clientDependency href="../../metadata/connections/mysql_1_0.1.item#_ctlesHJLEeW4VeOgz3OtTg"/>
     <clientDependency href="../../TDQ_Libraries/Patterns/Regex/internet/Email_Address_0.1.pattern#_iBclAHJLEeW4VeOgz3OtTg"/>
+    <clientDependency href="../../TDQ_Libraries/Patterns/Regex/internet/Email_Address_0.1.pattern#_nhEPYHJLEeW4VeOgz3OtTg"/>
     <taggedValue xmi:id="_cdmh8XJLEeW4VeOgz3OtTg" tag="Status" value="development"/>
     <taggedValue xmi:id="_cdmh8nJLEeW4VeOgz3OtTg" tag="Author" value="aa@aa.com"/>
     <taggedValue xmi:id="_cdmh83JLEeW4VeOgz3OtTg" tag="Purpose" value=""/>
@@ -12,304 +13,124 @@
     <taggedValue xmi:id="_ctjpgnJLEeW4VeOgz3OtTg" tag="NUMBER_OF_CONNECTIONS_PER_ANALYSIS" value="5"/>
     <context xmi:id="_cdmh9nJLEeW4VeOgz3OtTg">
       <connection href="../../metadata/connections/mysql_1_0.1.item#_U9v6oHJKEeW4VeOgz3OtTg"/>
-      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10egHJLEeW4VeOgz3OtTg"/>
-      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10ehHJLEeW4VeOgz3OtTg"/>
-      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10eiHJLEeW4VeOgz3OtTg"/>
-      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10ejHJLEeW4VeOgz3OtTg"/>
-      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10ekHJLEeW4VeOgz3OtTg"/>
-      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10elHJLEeW4VeOgz3OtTg"/>
-      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10emHJLEeW4VeOgz3OtTg"/>
       <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X11FkXJLEeW4VeOgz3OtTg"/>
-      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X11FlXJLEeW4VeOgz3OtTg"/>
     </context>
     <results xmi:id="_cdmh93JLEeW4VeOgz3OtTg">
-      <resultMetadata xmi:id="_cdmh-HJLEeW4VeOgz3OtTg"/>
-      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_ctkQkHJLEeW4VeOgz3OtTg">
-        <parameters xmi:id="_ctkQkXJLEeW4VeOgz3OtTg"/>
-        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10egHJLEeW4VeOgz3OtTg"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_ctkQknJLEeW4VeOgz3OtTg">
-        <parameters xmi:id="_ctkQk3JLEeW4VeOgz3OtTg"/>
-        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10egHJLEeW4VeOgz3OtTg"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_ctkQlHJLEeW4VeOgz3OtTg">
-        <parameters xmi:id="_ctkQlXJLEeW4VeOgz3OtTg"/>
-        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10egHJLEeW4VeOgz3OtTg"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_ctk3oHJLEeW4VeOgz3OtTg">
-        <parameters xmi:id="_ctk3oXJLEeW4VeOgz3OtTg"/>
-        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10egHJLEeW4VeOgz3OtTg"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_ctk3onJLEeW4VeOgz3OtTg">
-        <parameters xmi:id="_ctk3o3JLEeW4VeOgz3OtTg"/>
-        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10egHJLEeW4VeOgz3OtTg"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:DefValueCountIndicator" xmi:id="_ctk3pHJLEeW4VeOgz3OtTg">
-        <parameters xmi:id="_ctk3pXJLEeW4VeOgz3OtTg"/>
-        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10egHJLEeW4VeOgz3OtTg"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Default_Value_Count_0.1.definition#_xnOs8O1MEd2L4a5zyMnylw"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_ctlesnJLEeW4VeOgz3OtTg">
-        <parameters xmi:id="_ctles3JLEeW4VeOgz3OtTg"/>
-        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10ehHJLEeW4VeOgz3OtTg"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_ctletHJLEeW4VeOgz3OtTg">
-        <parameters xmi:id="_ctletXJLEeW4VeOgz3OtTg"/>
-        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10ehHJLEeW4VeOgz3OtTg"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_ctletnJLEeW4VeOgz3OtTg">
-        <parameters xmi:id="_ctlet3JLEeW4VeOgz3OtTg"/>
-        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10ehHJLEeW4VeOgz3OtTg"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_ctleuHJLEeW4VeOgz3OtTg">
-        <parameters xmi:id="_ctleuXJLEeW4VeOgz3OtTg"/>
-        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10ehHJLEeW4VeOgz3OtTg"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_ctleunJLEeW4VeOgz3OtTg">
-        <parameters xmi:id="_ctleu3JLEeW4VeOgz3OtTg"/>
-        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10ehHJLEeW4VeOgz3OtTg"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_ctlevHJLEeW4VeOgz3OtTg">
-        <parameters xmi:id="_ctlevXJLEeW4VeOgz3OtTg"/>
-        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10ehHJLEeW4VeOgz3OtTg"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:CountsIndicator" xmi:id="_ctmFwXJLEeW4VeOgz3OtTg">
-        <parameters xmi:id="_ctmFwnJLEeW4VeOgz3OtTg"/>
-        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10eiHJLEeW4VeOgz3OtTg"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Simple_Statistics_0.1.definition#_yb-Y4Dh8Ed2XmO7pl5Yuyg"/>
-        <blankCountIndicator xmi:id="_ctmFw3JLEeW4VeOgz3OtTg">
-          <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10eiHJLEeW4VeOgz3OtTg"/>
-          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
-        </blankCountIndicator>
-        <RowCountIndicator xmi:id="_ctmFxHJLEeW4VeOgz3OtTg">
-          <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10eiHJLEeW4VeOgz3OtTg"/>
-          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
-        </RowCountIndicator>
-        <NullCountIndicator xmi:id="_ctmFxXJLEeW4VeOgz3OtTg">
-          <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10eiHJLEeW4VeOgz3OtTg"/>
-          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
-        </NullCountIndicator>
-        <UniqueCountIndicator xmi:id="_ctmFxnJLEeW4VeOgz3OtTg">
-          <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10eiHJLEeW4VeOgz3OtTg"/>
-          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
-        </UniqueCountIndicator>
-        <distinctCountIndicator xmi:id="_ctmFx3JLEeW4VeOgz3OtTg">
-          <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10eiHJLEeW4VeOgz3OtTg"/>
-          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
-        </distinctCountIndicator>
-        <duplicateCountIndicator xmi:id="_ctmFyHJLEeW4VeOgz3OtTg">
-          <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10eiHJLEeW4VeOgz3OtTg"/>
-          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
-        </duplicateCountIndicator>
-        <defaultValueIndicator xmi:id="_ctmFyXJLEeW4VeOgz3OtTg">
-          <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10eiHJLEeW4VeOgz3OtTg"/>
-          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Default_Value_Count_0.1.definition#_xnOs8O1MEd2L4a5zyMnylw"/>
-        </defaultValueIndicator>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:CountsIndicator" xmi:id="_ctmFy3JLEeW4VeOgz3OtTg">
-        <parameters xmi:id="_ctmFzHJLEeW4VeOgz3OtTg"/>
-        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10ejHJLEeW4VeOgz3OtTg"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Simple_Statistics_0.1.definition#_yb-Y4Dh8Ed2XmO7pl5Yuyg"/>
-        <blankCountIndicator xmi:id="_ctmFzXJLEeW4VeOgz3OtTg">
-          <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10ejHJLEeW4VeOgz3OtTg"/>
-          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
-        </blankCountIndicator>
-        <RowCountIndicator xmi:id="_ctmFznJLEeW4VeOgz3OtTg">
-          <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10ejHJLEeW4VeOgz3OtTg"/>
-          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
-        </RowCountIndicator>
-        <NullCountIndicator xmi:id="_ctmFz3JLEeW4VeOgz3OtTg">
-          <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10ejHJLEeW4VeOgz3OtTg"/>
-          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
-        </NullCountIndicator>
-        <UniqueCountIndicator xmi:id="_ctmF0HJLEeW4VeOgz3OtTg">
-          <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10ejHJLEeW4VeOgz3OtTg"/>
-          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
-        </UniqueCountIndicator>
-        <distinctCountIndicator xmi:id="_ctmF0XJLEeW4VeOgz3OtTg">
-          <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10ejHJLEeW4VeOgz3OtTg"/>
-          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
-        </distinctCountIndicator>
-        <duplicateCountIndicator xmi:id="_ctmF0nJLEeW4VeOgz3OtTg">
-          <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10ejHJLEeW4VeOgz3OtTg"/>
-          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
-        </duplicateCountIndicator>
-        <defaultValueIndicator xmi:id="_ctmF03JLEeW4VeOgz3OtTg">
-          <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10ejHJLEeW4VeOgz3OtTg"/>
-          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Default_Value_Count_0.1.definition#_xnOs8O1MEd2L4a5zyMnylw"/>
-        </defaultValueIndicator>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:CountsIndicator" xmi:id="_ctmF1XJLEeW4VeOgz3OtTg">
-        <parameters xmi:id="_ctmF1nJLEeW4VeOgz3OtTg"/>
-        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10ekHJLEeW4VeOgz3OtTg"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Simple_Statistics_0.1.definition#_yb-Y4Dh8Ed2XmO7pl5Yuyg"/>
-        <blankCountIndicator xmi:id="_ctmF13JLEeW4VeOgz3OtTg">
-          <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10ekHJLEeW4VeOgz3OtTg"/>
-          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
-        </blankCountIndicator>
-        <RowCountIndicator xmi:id="_ctmF2HJLEeW4VeOgz3OtTg">
-          <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10ekHJLEeW4VeOgz3OtTg"/>
-          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
-        </RowCountIndicator>
-        <NullCountIndicator xmi:id="_ctmF2XJLEeW4VeOgz3OtTg">
-          <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10ekHJLEeW4VeOgz3OtTg"/>
-          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
-        </NullCountIndicator>
-        <UniqueCountIndicator xmi:id="_ctmF2nJLEeW4VeOgz3OtTg">
-          <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10ekHJLEeW4VeOgz3OtTg"/>
-          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
-        </UniqueCountIndicator>
-        <distinctCountIndicator xmi:id="_ctmF23JLEeW4VeOgz3OtTg">
-          <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10ekHJLEeW4VeOgz3OtTg"/>
-          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
-        </distinctCountIndicator>
-        <duplicateCountIndicator xmi:id="_ctmF3HJLEeW4VeOgz3OtTg">
-          <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10ekHJLEeW4VeOgz3OtTg"/>
-          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
-        </duplicateCountIndicator>
-        <defaultValueIndicator xmi:id="_ctmF3XJLEeW4VeOgz3OtTg">
-          <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10ekHJLEeW4VeOgz3OtTg"/>
-          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Default_Value_Count_0.1.definition#_xnOs8O1MEd2L4a5zyMnylw"/>
-        </defaultValueIndicator>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_ctmF33JLEeW4VeOgz3OtTg">
-        <parameters xmi:id="_ctmF4HJLEeW4VeOgz3OtTg"/>
-        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10elHJLEeW4VeOgz3OtTg"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_ctmF4XJLEeW4VeOgz3OtTg">
-        <parameters xmi:id="_ctmF4nJLEeW4VeOgz3OtTg"/>
-        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10elHJLEeW4VeOgz3OtTg"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_ctmF43JLEeW4VeOgz3OtTg">
-        <parameters xmi:id="_ctmF5HJLEeW4VeOgz3OtTg"/>
-        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10elHJLEeW4VeOgz3OtTg"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_ctmF5XJLEeW4VeOgz3OtTg">
-        <parameters xmi:id="_ctmF5nJLEeW4VeOgz3OtTg"/>
-        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10elHJLEeW4VeOgz3OtTg"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_ctmF53JLEeW4VeOgz3OtTg">
-        <parameters xmi:id="_ctmF6HJLEeW4VeOgz3OtTg"/>
-        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10elHJLEeW4VeOgz3OtTg"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:DefValueCountIndicator" xmi:id="_ctmF6XJLEeW4VeOgz3OtTg">
-        <parameters xmi:id="_ctmF6nJLEeW4VeOgz3OtTg"/>
-        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10elHJLEeW4VeOgz3OtTg"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Default_Value_Count_0.1.definition#_xnOs8O1MEd2L4a5zyMnylw"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_ctmF7HJLEeW4VeOgz3OtTg">
-        <parameters xmi:id="_ctmF7XJLEeW4VeOgz3OtTg"/>
-        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10emHJLEeW4VeOgz3OtTg"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_ctmF7nJLEeW4VeOgz3OtTg">
-        <parameters xmi:id="_ctmF73JLEeW4VeOgz3OtTg"/>
-        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10emHJLEeW4VeOgz3OtTg"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_ctmF8HJLEeW4VeOgz3OtTg">
-        <parameters xmi:id="_ctmF8XJLEeW4VeOgz3OtTg"/>
-        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10emHJLEeW4VeOgz3OtTg"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_ctmF8nJLEeW4VeOgz3OtTg">
-        <parameters xmi:id="_ctmF83JLEeW4VeOgz3OtTg"/>
-        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10emHJLEeW4VeOgz3OtTg"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_ctmF9HJLEeW4VeOgz3OtTg">
-        <parameters xmi:id="_ctmF9XJLEeW4VeOgz3OtTg"/>
-        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10emHJLEeW4VeOgz3OtTg"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_ctmF9nJLEeW4VeOgz3OtTg">
-        <parameters xmi:id="_ctmF93JLEeW4VeOgz3OtTg"/>
-        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X10emHJLEeW4VeOgz3OtTg"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_ctmF-XJLEeW4VeOgz3OtTg">
+      <resultMetadata xmi:id="_cdmh-HJLEeW4VeOgz3OtTg" executionDate="2015-10-14T16:14:44.958+0800" executionDuration="121" message="" executionNumber="2" lastRunOk="true" lastExecutionNumberOk="2"/>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_ctmF-XJLEeW4VeOgz3OtTg" count="26" nullCount="1" computed="true">
         <parameters xmi:id="_ctmF-nJLEeW4VeOgz3OtTg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X11FkXJLEeW4VeOgz3OtTg"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_m6ewgHJLEeW4VeOgz3OtTg" body="SELECT COUNT(*) FROM `dba`.`studentinfo` " language="MySQL"/>
+        <builtInIndicatorDefinition xmi:id="_m6NqwHJLEeW4VeOgz3OtTg" name="Row Count" categories="Simple Statistics" label="Row Count">
+          <taggedValue xmi:id="_m6NqwXJLEeW4VeOgz3OtTg" tag="Description" value="counts the number of rows"/>
+          <taggedValue xmi:id="_m6NqwnJLEeW4VeOgz3OtTg" tag="Purpose" value="evaluates the number of records"/>
+          <sqlGenericExpression xmi:id="_m6Nqw3JLEeW4VeOgz3OtTg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_ctmF-3JLEeW4VeOgz3OtTg">
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_ctmF-3JLEeW4VeOgz3OtTg" count="26" nullCount="1" computed="true">
         <parameters xmi:id="_ctmF_HJLEeW4VeOgz3OtTg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X11FkXJLEeW4VeOgz3OtTg"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_m6ewgXJLEeW4VeOgz3OtTg" body="SELECT COUNT(*) FROM `dba`.`studentinfo` WHERE `email` IS NULL " language="MySQL"/>
+        <builtInIndicatorDefinition xmi:id="_m6QuEHJLEeW4VeOgz3OtTg" name="Null Count" categories="Simple Statistics" label="Null Count">
+          <taggedValue xmi:id="_m6QuEXJLEeW4VeOgz3OtTg" tag="Purpose" value="evaluate the number of missing data (null records)"/>
+          <taggedValue xmi:id="_m6QuEnJLEeW4VeOgz3OtTg" tag="Description" value="counts the number of null rows"/>
+          <sqlGenericExpression xmi:id="_m6QuE3JLEeW4VeOgz3OtTg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_ctmF_XJLEeW4VeOgz3OtTg">
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_ctmF_XJLEeW4VeOgz3OtTg" count="26" nullCount="1" computed="true" distinctValueCount="22">
         <parameters xmi:id="_ctmF_nJLEeW4VeOgz3OtTg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X11FkXJLEeW4VeOgz3OtTg"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_m6ewgnJLEeW4VeOgz3OtTg" body="SELECT COUNT(*) FROM (SELECT DISTINCT `email` FROM `dba`.`studentinfo` ) A" language="MySQL"/>
+        <builtInIndicatorDefinition xmi:id="_m6SjQHJLEeW4VeOgz3OtTg" name="Distinct Count" categories="Simple Statistics" label="Distinct Count">
+          <taggedValue xmi:id="_m6SjQXJLEeW4VeOgz3OtTg" tag="Description" value="counts the number of distinct rows (like a &quot;SELECT DISTINCT&quot; SQL statement)"/>
+          <taggedValue xmi:id="_m6SjQnJLEeW4VeOgz3OtTg" tag="Purpose" value="evaluates the number of distinct records"/>
+          <sqlGenericExpression xmi:id="_m6SjQ3JLEeW4VeOgz3OtTg" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
+        </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_ctmF_3JLEeW4VeOgz3OtTg">
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_ctmF_3JLEeW4VeOgz3OtTg" count="26" nullCount="1" computed="true" uniqueValueCount="20">
         <parameters xmi:id="_ctmGAHJLEeW4VeOgz3OtTg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X11FkXJLEeW4VeOgz3OtTg"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_m6ewg3JLEeW4VeOgz3OtTg" body="SELECT COUNT(*) FROM (SELECT `email`, COUNT(*) mycount FROM `dba`.`studentinfo`  GROUP BY `email` HAVING mycount = 1) AS myquery" language="MySQL"/>
+        <builtInIndicatorDefinition xmi:id="_m6TxYHJLEeW4VeOgz3OtTg" name="Unique Count" categories="Simple Statistics" label="Unique Count">
+          <taggedValue xmi:id="_m6TxYXJLEeW4VeOgz3OtTg" tag="Description" value="counts the number of unique rows (i.e. distinct rows with only one instance: rows that are not duplicated)"/>
+          <taggedValue xmi:id="_m6TxYnJLEeW4VeOgz3OtTg" tag="Purpose" value="evaluates the number of unique records"/>
+          <sqlGenericExpression xmi:id="_m6TxY3JLEeW4VeOgz3OtTg" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) AS myquery" language="SQL"/>
+          <sqlGenericExpression xmi:id="_m6TxZHJLEeW4VeOgz3OtTg" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING mycount = 1) AS myquery" language="MySQL"/>
+          <sqlGenericExpression xmi:id="_m6TxZXJLEeW4VeOgz3OtTg" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) myquery" language="Oracle"/>
+          <sqlGenericExpression xmi:id="_m6TxZnJLEeW4VeOgz3OtTg" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING mycount = 1) AS myquery" language="Teradata"/>
+          <sqlGenericExpression xmi:id="_m6TxZ3JLEeW4VeOgz3OtTg" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) AS myquery" language="Microsoft SQL Server"/>
+          <sqlGenericExpression xmi:id="_m6TxaHJLEeW4VeOgz3OtTg" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) AS myquery" language="Adaptive Server Enterprise | Sybase Adaptive Server IQ"/>
+          <sqlGenericExpression xmi:id="_m6TxaXJLEeW4VeOgz3OtTg" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1)  myquery" language="Hive" version=""/>
+        </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_ctmGAXJLEeW4VeOgz3OtTg">
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_ctmGAXJLEeW4VeOgz3OtTg" count="26" nullCount="1" computed="true" duplicateValueCount="2">
         <parameters xmi:id="_ctmGAnJLEeW4VeOgz3OtTg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X11FkXJLEeW4VeOgz3OtTg"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_m6ewhHJLEeW4VeOgz3OtTg" body="SELECT COUNT(*) FROM (SELECT `email`, COUNT(*) mycount FROM `dba`.`studentinfo`  m  GROUP BY `email` HAVING mycount > 1) AS myquery" language="MySQL"/>
+        <builtInIndicatorDefinition xmi:id="_m6VmkHJLEeW4VeOgz3OtTg" name="Duplicate Count" categories="Simple Statistics" label="Duplicate Count">
+          <taggedValue xmi:id="_m6VmkXJLEeW4VeOgz3OtTg" tag="Description" value="counts the number of duplicate rows. This number and the number of unique data equals the number of distinct rows"/>
+          <taggedValue xmi:id="_m6VmknJLEeW4VeOgz3OtTg" tag="Purpose" value="evaluates the number of duplicated records"/>
+          <sqlGenericExpression xmi:id="_m6Vmk3JLEeW4VeOgz3OtTg" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) AS myquery" language="SQL"/>
+          <sqlGenericExpression xmi:id="_m6VmlHJLEeW4VeOgz3OtTg" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING mycount > 1) AS myquery" language="MySQL"/>
+          <sqlGenericExpression xmi:id="_m6VmlXJLEeW4VeOgz3OtTg" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) myquery" language="Oracle"/>
+          <sqlGenericExpression xmi:id="_m6VmlnJLEeW4VeOgz3OtTg" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING mycount > 1) AS myquery" language="Teradata"/>
+          <sqlGenericExpression xmi:id="_m6Vml3JLEeW4VeOgz3OtTg" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) myquery" language="Microsoft SQL Server"/>
+          <sqlGenericExpression xmi:id="_m6VmmHJLEeW4VeOgz3OtTg" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) AS myquery" language="Adaptive Server Enterprise | Sybase Adaptive Server IQ"/>
+          <sqlGenericExpression xmi:id="_m6VmmXJLEeW4VeOgz3OtTg" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) myquery" language="Hive"/>
+        </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_ctmGA3JLEeW4VeOgz3OtTg">
+      <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_ctmGA3JLEeW4VeOgz3OtTg" count="26" nullCount="1" computed="true">
         <parameters xmi:id="_ctmGBHJLEeW4VeOgz3OtTg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X11FkXJLEeW4VeOgz3OtTg"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_m6ewhXJLEeW4VeOgz3OtTg" body="SELECT COUNT(`email`) FROM `dba`.`studentinfo` WHERE TRIM(`email`) = '' " language="MySQL"/>
+        <builtInIndicatorDefinition xmi:id="_m6XbwHJLEeW4VeOgz3OtTg" name="Blank Count" categories="Simple Statistics" label="Blank Count">
+          <taggedValue xmi:id="_m6XbwXJLEeW4VeOgz3OtTg" tag="Description" value="counts the number of blank rows. A blank is a non null textual data that contains only white spaces (or nothing). Note that Oracle does not distinguish between the empty string and the null value"/>
+          <taggedValue xmi:id="_m6XbwnJLEeW4VeOgz3OtTg" tag="Purpose" value="evaluates the number of blank records"/>
+          <sqlGenericExpression xmi:id="_m6Xbw3JLEeW4VeOgz3OtTg" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> WHERE TRIM(&lt;%=__COLUMN_NAMES__%>) = '' &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
+          <sqlGenericExpression xmi:id="_m6XbxHJLEeW4VeOgz3OtTg" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%>  WHERE TRIM(&lt;%=__COLUMN_NAMES__%>) IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="Oracle"/>
+          <sqlGenericExpression xmi:id="_m6XbxXJLEeW4VeOgz3OtTg" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%>  WHERE LTRIM(RTRIM(&lt;%=__COLUMN_NAMES__%>)) = '' &lt;%=__AND_WHERE_CLAUSE__%>" language="DB2"/>
+          <sqlGenericExpression xmi:id="_m6XbxnJLEeW4VeOgz3OtTg" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%>  WHERE LTRIM(RTRIM(&lt;%=__COLUMN_NAMES__%>)) = '' &lt;%=__AND_WHERE_CLAUSE__%>" language="Microsoft SQL Server"/>
+          <sqlGenericExpression xmi:id="_m6Xbx3JLEeW4VeOgz3OtTg" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> = '' or RTRIM(LTRIM(&lt;%=__COLUMN_NAMES__%>)) = '') &lt;%=__AND_WHERE_CLAUSE__%>" language="Adaptive Server Enterprise | Sybase Adaptive Server IQ"/>
+        </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_iInkAXJLEeW4VeOgz3OtTg" name="Email Address">
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_iInkAXJLEeW4VeOgz3OtTg" name="Email Address" count="26" nullCount="1" computed="true" matchingValueCount="15" notMatchingValueCount="11">
         <parameters xmi:id="_iInkAnJLEeW4VeOgz3OtTg">
           <dataValidDomain xmi:id="_iInkA3JLEeW4VeOgz3OtTg">
             <patterns href="../../TDQ_Libraries/Patterns/Regex/internet/Email_Address_0.1.pattern#_rC5TcD4XEd24WPpU35gV1A"/>
+            <builtInPatterns xmi:id="_m6Yp4HJLEeW4VeOgz3OtTg" name="Email Address">
+              <taggedValue xmi:id="_m6Yp4XJLEeW4VeOgz3OtTg" tag="Purpose" value="Check the validity of email addresses."/>
+              <taggedValue xmi:id="_m6Yp4nJLEeW4VeOgz3OtTg" tag="Description" value="Matches the email addresses"/>
+              <taggedValue xmi:id="_m6Yp43JLEeW4VeOgz3OtTg" tag="Author" value=""/>
+              <taggedValue xmi:id="_m6Yp5HJLEeW4VeOgz3OtTg" tag="Status" value="Draft"/>
+              <taggedValue xmi:id="_m6Yp5XJLEeW4VeOgz3OtTg" tag="Validation_Status" value="true"/>
+              <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_m6Yp5nJLEeW4VeOgz3OtTg" expressionType="REGEXP">
+                <expression xmi:id="_m6Yp53JLEeW4VeOgz3OtTg" body="'^[a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$'" language="Oracle"/>
+              </components>
+              <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_m6Yp6HJLEeW4VeOgz3OtTg" expressionType="REGEXP">
+                <expression xmi:id="_m6Yp6XJLEeW4VeOgz3OtTg" body="'^[a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,4}$'" language="Mysql"/>
+              </components>
+              <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_m6Yp6nJLEeW4VeOgz3OtTg" expressionType="REGEXP">
+                <expression xmi:id="_m6Yp63JLEeW4VeOgz3OtTg" body="'^[a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$'" language="Java"/>
+              </components>
+              <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_m6Yp7HJLEeW4VeOgz3OtTg" expressionType="REGEXP">
+                <expression xmi:id="_m6Yp7XJLEeW4VeOgz3OtTg" body="'^[a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$'" language="SQL" modificationDate="2013-09-19 14:26:31"/>
+              </components>
+            </builtInPatterns>
           </dataValidDomain>
         </parameters>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X11FkXJLEeW4VeOgz3OtTg"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_ctmGBnJLEeW4VeOgz3OtTg">
-        <parameters xmi:id="_ctmGB3JLEeW4VeOgz3OtTg"/>
-        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X11FlXJLEeW4VeOgz3OtTg"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_ctmGCHJLEeW4VeOgz3OtTg">
-        <parameters xmi:id="_ctmGCXJLEeW4VeOgz3OtTg"/>
-        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X11FlXJLEeW4VeOgz3OtTg"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_ctmGCnJLEeW4VeOgz3OtTg">
-        <parameters xmi:id="_ctmGC3JLEeW4VeOgz3OtTg"/>
-        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X11FlXJLEeW4VeOgz3OtTg"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_ctmGDHJLEeW4VeOgz3OtTg">
-        <parameters xmi:id="_ctmGDXJLEeW4VeOgz3OtTg"/>
-        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X11FlXJLEeW4VeOgz3OtTg"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_ctmGDnJLEeW4VeOgz3OtTg">
-        <parameters xmi:id="_ctmGD3JLEeW4VeOgz3OtTg"/>
-        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/mysql_1_0.1.item#_X11FlXJLEeW4VeOgz3OtTg"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_m6ewhnJLEeW4VeOgz3OtTg" body="SELECT COUNT(CASE WHEN `email` REGEXP BINARY '^[a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,4}$' THEN 1 END), COUNT(*) FROM `dba`.`studentinfo` " language="MySQL"/>
       </indicators>
     </results>
     <parameters xmi:id="_cdnJAHJLEeW4VeOgz3OtTg" dataFilter="_dIR2oHJLEeW4VeOgz3OtTg" analysisType="Multiple Column Analysis"/>
-    <contextType xmi:id="_iInkAHJLEeW4VeOgz3OtTg" confirmationNeeded="false" name="Default"/>
+    <contextType xmi:id="_mql6YHJLEeW4VeOgz3OtTg" confirmationNeeded="false" name="Default"/>
   </dataquality.analysis:Analysis>
   <dataquality.domain:Domain xmi:id="_dIR2oHJLEeW4VeOgz3OtTg" name="column_1">
     <ranges xmi:id="_dISdsHJLEeW4VeOgz3OtTg">
