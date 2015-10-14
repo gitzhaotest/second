@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Project xmi:id="_YBbZ8XI9EeW4VeOgz3OtTg" label="first_https_onsecond" description="" language="java" technicalLabel="FIRST_HTTPS_ONSECOND" creationDate="2015-10-14T14:29:53.216+0800" author="_YBbZ8nI9EeW4VeOgz3OtTg" productVersion="Talend Data Fabric-6.1.0.20151013_1933-SNAPSHOT" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/gitzhaotest/second.git&quot;,&quot;login&quot;:&quot;gitzhaotest&quot;,&quot;passwd&quot;:&quot;DUbcNKQLfc829FoMju9PlFpqwqtNZQHr&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DQ" itemsRelationVersion="1.3">
+    <technicalStatus xmi:id="_YwL9YHI9EeW4VeOgz3OtTg" label="development" code="DEV"/>
+    <technicalStatus xmi:id="_YwL9YXI9EeW4VeOgz3OtTg" label="testing" code="TEST"/>
+    <technicalStatus xmi:id="_YwL9YnI9EeW4VeOgz3OtTg" label="production" code="PROD"/>
+    <documentationStatus xmi:id="_YwJhIHI9EeW4VeOgz3OtTg" label="unchecked" code="UCK"/>
+    <documentationStatus xmi:id="_YwJhIXI9EeW4VeOgz3OtTg" label="checked" code="CHK"/>
+    <documentationStatus xmi:id="_YwJhInI9EeW4VeOgz3OtTg" label="validated" code="VAL"/>
+    <migrationTask xmi:id="_YXl3MHI9EeW4VeOgz3OtTg" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
+    <migrationTask xmi:id="_YXl3MXI9EeW4VeOgz3OtTg" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
+    <migrationTask xmi:id="_YXl3MnI9EeW4VeOgz3OtTg" id="org.talend.repository.model.migration.CleanFoldersMigrationTask" breaks="5.1.1" version="5.1.2" status="ok"/>
+    <migrationTask xmi:id="_YXl3M3I9EeW4VeOgz3OtTg" id="org.talend.repository.model.migration.RemoveBinFolderMigrationTask" breaks="5.1.1" version="5.1.2" status="ok"/>
+    <migrationTask xmi:id="_YXl3NHI9EeW4VeOgz3OtTg" id="org.talend.repository.model.migration.UpdateExistentMigrationTasksToAdaptNewMigrationSystemMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
+    <migrationTask xmi:id="_YXl3NXI9EeW4VeOgz3OtTg" id="org.talend.designer.core.ui.preferences.migration.ChangeMysqlVersionForProjectSetting" breaks="5.2.0" version="5.1.3" status="noimpact"/>
+    <migrationTask xmi:id="_YXl3NnI9EeW4VeOgz3OtTg" id="org.talend.designer.core.ui.preferences.migration.ChangeOracleVersionForProjectSetting" breaks="5.2.0" version="5.2.1" status="noimpact"/>
+    <migrationTask xmi:id="_YXl3N3I9EeW4VeOgz3OtTg" id="org.talend.repository.hadoopcluster.model.migration.MoveHDFSAndHCatalogToHadoopFolderMigrationTask" breaks="5.3.0" version="5.3.0" status="ok"/>
+    <migrationTask xmi:id="_YXl3OHI9EeW4VeOgz3OtTg" id="org.talend.repository.model.migration.RemoveRoutineJarDependencyTask" breaks="5.4.1" version="5.4.2" status="noimpact"/>
+    <migrationTask xmi:id="_YXl3OXI9EeW4VeOgz3OtTg" id="org.talend.repository.model.migration.ChangePostgresDbVersionForProjectSetting" breaks="5.4.1" version="5.4.2" status="noimpact"/>
+    <migrationTask xmi:id="_YXl3OnI9EeW4VeOgz3OtTg" id="org.talend.repository.model.migration.EncryptPasswordInProjectSettingsMigrationTask" breaks="5.4.1" version="5.4.3" status="noimpact"/>
+    <migrationTask xmi:id="_YXl3O3I9EeW4VeOgz3OtTg" id="org.talend.repository.model.migration.UnifyPasswordEncryption4ProjectSettingsMigrationTask" breaks="5.6.0" version="5.6.0" status="noimpact"/>
+    <migrationTask xmi:id="_YXl3PHI9EeW4VeOgz3OtTg" id="org.talend.repository.model.migration.ChangeComponentSettingNameMigrationTask" breaks="5.5.2" version="5.6.2" status="ok"/>
+    <migrationTask xmi:id="_YXl3PXI9EeW4VeOgz3OtTg" id="org.talend.repository.model.migration.RemoveRoutineAntlrJarDependencyTask" breaks="6.0.0" version="6.0.1" status="noimpact"/>
+    <migrationTask xmi:id="_YXl3PnI9EeW4VeOgz3OtTg" id="org.talend.repository.model.migration.RemoveProjectLibsFolder" breaks="6.0.0" version="6.0.1" status="noimpact"/>
+  </TalendProperties:Project>
+  <TalendProperties:User xmi:id="_YBbZ8nI9EeW4VeOgz3OtTg" login="admin@company.com" firstName="admin" lastName="admin" type="DI" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_YwNykHI9EeW4VeOgz3OtTg" login="aa@aa.com" firstName="aa" lastName="aa" type="DQ" additionnalData="{}">
+    <projectAuthorization href="../F:/610/Talend-Studio-20151013_1933-V6.1.0SNAPSHOTTP_All/#/"/>
+  </TalendProperties:User>
+</xmi:XMI>
